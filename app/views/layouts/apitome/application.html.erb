@@ -4,7 +4,11 @@
   <title><%= Apitome.configuration.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag Apitome.configuration.css_override || "apitome/application", media: "all" %>
+  <%= stylesheet_link_tag "apitome/bootstrap.min", media: "all" %>
   <%= stylesheet_link_tag "apitome/highlight_themes/#{Apitome.configuration.code_theme}", media: "all" %>
+  <%= javascript_include_tag "apitome/jquery-2.0.3.min" %>
+  <%= javascript_include_tag "apitome/highlight.min" %>
+  <%= javascript_include_tag "apitome/bootstrap.min" %>
   <%= javascript_include_tag Apitome.configuration.js_override || "apitome/application" %>
 </head>
 <body class="<%= Apitome.configuration.single_page ? "single-page" : "" %>">
