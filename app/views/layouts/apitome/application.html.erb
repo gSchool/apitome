@@ -3,6 +3,7 @@
 <head>
   <title><%= Apitome.configuration.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= favicon_link_tag Apitome.configuration.favicon %>
   <%= stylesheet_link_tag Apitome.configuration.css_override || "apitome/application", media: "all" %>
   <%= stylesheet_link_tag "apitome/bootstrap.min", media: "all" %>
   <%= stylesheet_link_tag "apitome/highlight_themes/#{Apitome.configuration.code_theme}", media: "all" %>

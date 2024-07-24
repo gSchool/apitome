@@ -23,6 +23,7 @@ module Apitome
       :simulated_response,
       :formatted_body_error_handler,
       :example_error_handler,
+      :favicon,
     ])
 
     @@mount_at = "/api/docs"
@@ -43,6 +44,7 @@ module Apitome
     @@simulated_response = true
     @@formatted_body_error_handler = nil
     @@example_error_handler = nil
+    @@favicon = nil
 
     def self.root=(path)
       @@root = Pathname.new(path.to_s) if path.present?
